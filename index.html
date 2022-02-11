@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT & Accesibility Assignment</title>
+    <link rel="stylesheet" href="#style.css">
+</head>
+
+<body>
+    <h1>
+        Normal Accessibility test
+    </h1>
+    <div >
+        <span tabindex="1" onfocus="document.querySelector('.autofocus2').focus()"></span>
+        <a href="#" tabindex="2" class="autofocus1" autofocus id="tutorials" >Tutorials</a> 
+        <a href="#" tabindex="3">References</a> 
+        <a href="#" tabindex="4">Excercise</a> 
+        <a href="#" tabindex="5">Videos</a>
+        <a href="#" tabindex="6">New</a> 
+        <a href="#" tabindex="7">Menu</a>
+    </div>
+    <div>
+        <a href="#" tabindex="8">Log in</a>
+    </div>
+    <div>
+        <a href="#" tabindex="9">Paid</a> 
+        <a href="#" tabindex="10">Courses</a> 
+        <a href="#" tabindex="11">NEW</a>
+    </div>
+    <input type="submit" value="ok" onclick="submit()" accesskey="o" id="submit" tabindex="12">
+    <input type="button" value="Cancel" onclick="cancel()" class="autofocus2" accesskey="c"id="cancel" tabindex="13" >  
+<span tabindex="14" onfocus="document.querySelector('.autofocus1').focus()"></span>
+<script src="index.js"></script>
+</body>
+
+</html>
