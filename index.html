@@ -10,30 +10,33 @@
 </head>
 
 <body>
-    <h1>
-        Normal Accessibility test 
-    </h1>
-    <div >
-        <span tabindex="1" onfocus="document.querySelector('.autofocus2').focus()"></span>
-        <a href="#" tabindex="2" class="autofocus1" autofocus id="tutorials" >Tutorials</a> 
-        <a href="#" tabindex="3">References</a> 
-        <a href="#" tabindex="4">Excercise</a> 
-        <a href="#" tabindex="5">Videos</a>
-        <a href="#" tabindex="6">New</a> 
-        <a href="#" tabindex="7">Menu</a>
-    </div>
-    <div>
-        <a href="#" tabindex="8">Log in</a>
-    </div>
-    <div>
-        <a href="#" tabindex="9">Paid</a> 
-        <a href="#" tabindex="10">Courses</a> 
-        <a href="#" tabindex="11">NEW</a>
-    </div>
-    <input type="submit" value="ok" accesskey="o" id="submit" tabindex="12">
-    <input type="button" value="Cancel"  class="autofocus2" accesskey="c"id="cancel" tabindex="13" >  
-<span tabindex="14" onfocus="document.querySelector('.autofocus1').focus()"></span>
-<script src="index.js"></script>
-</body>
+    <div class="main-container">
+        <h1 role="heading" id="heading" tabindex="0">
+            Normal Accessibility test
+        </h1>
+        <div>
+            <a href="#">Tutorials</a>
+            <a href="#">References</a>
+            <a href="#">Excercise</a>
+            <a href="#">Videos</a>
+            <a href="#">New</a>
+            <a href="#">Menu</a>
+        </div>
+        <div>
+            <a href="#">Log in</a>
+        </div>
+        <div>
+            <a href="#">Paid</a>
+            <a href="#">Courses</a>
+            <a href="#">NEW</a>
+        </div>
+        <input type="submit" value="ok" accesskey="o" id="submit">
+        <input type="button" value="Cancel" accesskey="c" id="cancel">
 
+        <h4>Press "K" for ok Button and "C" for Cancel button.</h4>
+    </div >
+
+    <script src="index.js"></script>
+
+</body>
 </html>
